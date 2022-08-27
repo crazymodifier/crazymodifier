@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 2
           
       - name: FTP-Deploy-Action
-        uses: SamKrikland/FTP-Deploy-Action@4.2
+        uses: crazymodifier/crazymodifier
         with:
           ftp-server: ${{secrets.FRP_SERVER}}
           ftp-username: ${{secrets.FRP_USERNAME}}
