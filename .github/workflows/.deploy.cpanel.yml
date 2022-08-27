@@ -15,7 +15,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.1
       with:
-        server: ${{secrets.FRP_SERVER}}
-        username: ${{secrets.FRP_USERNAME}}
-        password: ${{secrets.FRP_PASSWORD}}
+        ftp-server: ${{secrets.FRP_SERVER}}
+        ftp-username: ${{secrets.FRP_USERNAME}}
+        ftp-password: ${{secrets.FRP_PASSWORD}}
 
