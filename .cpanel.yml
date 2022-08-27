@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/crazymod/public_html/wp-content/themes/crazymodifier
+    - /bin/cp $DEPLOYPATH
