@@ -1,0 +1,24 @@
+name: Publish to Website
+on:
+  push:
+    branches: [ "master" ]
+
+permissions:
+  contents: read
+
+jobs:
+  FTP-Deploy-Action: 
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+          
+      - name: FTP-Deploy-Action
+        with:
+          ftp-server: ${{secrets.FRP_SERVER}}
+          ftp-username: ${{secrets.FRP_USERNAME}}
+          ftp-password: ${{secrets.FRP_PASSWORD}}
+  
