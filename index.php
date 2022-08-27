@@ -5,7 +5,7 @@ get_header();
 ?>
 
 
-<main id="site-content" class="container">
+<main id="site-content" class="container cmd-bootstrap-wrapper">
 
     <div class="row">
         <div class="col-lg-8">
@@ -26,7 +26,7 @@ get_header();
         ?>
         </div>
         <div class="col-lg-4">
-            
+            <?php get_sidebar(  )?>
         </div>
     </div>
 
