@@ -1,26 +1,21 @@
-name: Publish to Website
-on:
+on: 
   push:
-    branches: 
+    branch:
       - master
-
-permissions:
-  contents: read
-
+      
+name: 🚀 Deploy website on push
 jobs:
-  FTP-Deploy-Action: 
-    name: FTP-Deploy-Action
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-  
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-          
-      - name: FTP-Deploy-Action
-        uses: crazymodifier/crazymodifier
-        with:
-          ftp-server: ${{secrets.FRP_SERVER}}
-          ftp-username: ${{secrets.FRP_USERNAME}}
-          ftp-password: ${{secrets.FRP_PASSWORD}}
-  
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.1
+      with:
+        server: ${{secrets.FRP_SERVER}}
+        username: ${{secrets.FRP_USERNAME}}
+        password: ${{secrets.FRP_PASSWORD}}
+
