@@ -11,7 +11,7 @@ function get_cmd_custom_logo(){
 }
 
 function cmd_get_header(){
-    return true;
+    return false;
 }
 
 function get_kdw_header(){
