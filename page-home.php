@@ -10,10 +10,18 @@ get_header();
             <div class="cmd-hero-text">
                 <h4 class="cmd-sub-heading">Hi There</h4>
                 <h1 class="cmd-heading">This is Crazy Modifier</h1>
-                <p class="cmd-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque doloribus beatae similique temporibus totam explicabo corporis, sit exercitationem odit dolor. Maxime, corrupti quas veniam laboriosam sint atque temporibus quod.</p>
+                <div class="cmd-hero-content">
+                    <p class="cmd-text">
+                        I am a Full Stack Developer, with 4+ years of experience. I can work on Front-End & Back-End Both. I have knowledge of various web technologies like as HTML, CSS, JavaScript, jQuery, PHP, CodeIgniter, WordPress and basics knowladge of React.js and Node.js.
+                    </p>
+                    <p class="cmd-text">
+                        I have done many projects like e-commerce, LMS, Social platforms, Job portal, and informatical etc.
+                    </p>
+                </div>
+
 
                 <div class="cmd-hero-cta">
-                    <a href="#" class="cmd-btn cmd-btn-secondary">Schedule a meeting</a>
+                    <a href="tel:+918604026123" class="cmd-btn cmd-btn-secondary">Schedule a meeting</a>
                     <a href="<?php echo get_post_type_archive_link( 'post' )?>" class="cmd-btn cmd-btn-secondary-outline">View My Blogs</a>
                 </div>
 
@@ -240,8 +248,8 @@ get_header();
                         </div>
 
                         <div class="cmd-counter-wrapper">
-                            <h4 class="count"> <span class="counter-numbers" data-count="60"></span>+</h4>
-                            <h5 class=counter-text>Happy Clients</h5>
+                            <h4 class="count"> <span class="counter-numbers" data-count="4"></span>+</h4>
+                            <h5 class=counter-text>Years Experience</h5>
                         </div>
 
                     </div>
