@@ -6,7 +6,7 @@ get_header();
 
 <header class="cmd-primary-bg" style="position:relative">
     <div class="container">
-        <div class="cmd-front-page-header" style="background-image:url('http://localhost:8888/storeapp/wp-content/uploads/2022/07/crazymodifier.png')">
+        <div class="cmd-front-page-header" style="background-image:url('<?php echo site_url();?>/wp-content/themes/crazymodifier/assets/img/crazymodifier.png')">
             <div class="cmd-hero-text">
                 <h4 class="cmd-sub-heading">Hi There</h4>
                 <h1 class="cmd-heading">This is Crazy Modifier</h1>
@@ -22,9 +22,13 @@ get_header();
 
                 <div class="cmd-hero-cta">
                     <a href="tel:+918604026123" class="cmd-btn cmd-btn-secondary">Schedule a meeting</a>
-                    <a href="<?php echo get_post_type_archive_link( 'post' )?>" class="cmd-btn cmd-btn-secondary-outline">View My Blogs</a>
+                    <!-- <a href="<?php echo get_post_type_archive_link( 'post' )?>" class="cmd-btn cmd-btn-secondary-outline">View My Blogs</a> -->
+
+                    <a href="<?php echo site_url();?>/wp-content/uploads/2022/08/suraj-kumar-cv.pdf" Download class="cmd-btn cmd-btn-secondary-outline">Download Resume</a>
                 </div>
 
+
+                <?php if(false): ?>
                 <div class="cmd-social-links">
 
                     <a href="#" class="cmd-icon-wraper youtube"><i class="fab fa-youtube"></i></a>
@@ -33,6 +37,8 @@ get_header();
                     <a href="#" class="cmd-icon-wraper linkedin"><i class="fab fa-linkedin"></i></a>
 
                 </div>
+
+                <?php endif;?>
             </div>
         </div>
         
@@ -56,33 +62,45 @@ get_header();
     
     <section id="cmd-about-section" class="">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 
                 <div class="col-lg-auto">
 
                     <div class="cmd-about-image">
-                        <img src="http://localhost:8888/storeapp/wp-content/uploads/2022/07/photo1.png" alt="">
+                        <img src="<?php echo site_url();?>/wp-content/themes/crazymodifier/assets/img/photo1.png" alt="">
                     </div>
 
                 </div>
                 <div class="col-lg">
                     <div class="cmd-heading-wrapper half-width">
-                        <span class="cmd-heading-watermark">Experience</span>
-                        <h2 class="cmd-h2">Heading First</h2>
+                        <span class="cmd-heading-watermark">Knowladege</span>
+                        <h2 class="cmd-h2">Web technologies</h2>
                     </div>
 
                     <div class="cmd-content">
-                        <p class="cmd-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quas nemo velit incidunt accusantium eaque unde repellendus,</p>
+                        <br>
+                        <p class="cmd-text">As a Full-Stack Developer, I have worked on many websites or projects like making a complete website from scratch, wordpress theme and plugin development, payment gateway integrations etc. There are some my key skills</p>
 
                         <br>
-                        <div class="cmd-about-content">
+                        <p>
+                            <span class="cmd-btn btn-sm cmd-btn-secondary">PSD/Figma to HTML</span>
+                            <span class="cmd-btn btn-sm cmd-btn-secondary">PSD/Figma to WordPress</span>
+                            <span class="cmd-btn btn-sm cmd-btn-secondary">Payment Gateways</span>
+                            <span class="cmd-btn btn-sm cmd-btn-secondary">REST APIs</span>
+                            <span class="cmd-btn btn-sm cmd-btn-secondary">WordPress Themes</span>
+                            <span class="cmd-btn btn-sm cmd-btn-secondary">WordPress Plugins</span>
+                            <span class="cmd-btn btn-sm cmd-btn-secondary">Page templates</span>
+                            <span class="cmd-btn btn-sm cmd-btn-secondary">Postman Application</span>
+                        </p>
+                        <!-- <br> -->
+                        <!-- <div class="cmd-about-content">
 
-                        </div>
+                        </div> -->
                     </div>
 
-                    <div class="cmd-hero-cta">
+                    <!-- <div class="cmd-hero-cta">
                         <a href="#" class="cmd-btn cmd-btn-secondary">Schedule a meeting</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -270,7 +288,7 @@ get_header();
                 <div class="col-lg-auto">
 
                     <div class="cmd-about-image">
-                        <img src="http://localhost:8888/storeapp/wp-content/uploads/2022/07/photo1.png" alt="">
+                        <img src="<?php echo site_url();?>/wp-content/themes/crazymodifier/assets/img/photo1.png" alt="">
                     </div>
 
                 </div>
@@ -352,6 +370,7 @@ get_header();
                             <li>Working on WordPress (WooCommerce)</li>
                             <li>Font-End & Back-End Development</li>
                             <li>Site Optimisation</li>
+                            <li>Theme & Plugin Development</li>
                         </ul>
                     </div>
                     <div class="cmd-exp">
@@ -363,10 +382,11 @@ get_header();
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab quae sequi, reprehenderit enim quia, voluptates cumque.</p>
                         <ul>
-                            <li>Working on WordPress</li>
+                            <li>Working on PHP, CodeIgniter, & WordPress</li>
                             <li>Font-End & Back-End Development</li>
                             <li>Site Optimisation</li>
                             <li>Theme & Plugin Development</li>
+                            <li>Server handling</li>
                         </ul>
                     </div>
                     <div class="cmd-exp">
@@ -378,10 +398,10 @@ get_header();
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab quae sequi, reprehenderit enim quia, voluptates cumque.</p>
                         <ul>
-                            <li>Working on WordPress</li>
+                            <li>Working on PHP, CodeIgniter, & WordPress</li>
                             <li>Font-End & Back-End Development</li>
                             <li>Site Optimisation</li>
-                            <li>Theme & Plugin Development</li>
+                            <li>Server handling</li>
                         </ul>
                     </div>
                 </div>
