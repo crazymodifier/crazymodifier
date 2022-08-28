@@ -46,7 +46,7 @@ get_header();
 <main id="site-content">
 
     
-    <section id="cmd-about-section" class="">
+    <section id="cmd-about-section" class="d-none">
         <div class="container">
             <div class="row">
                 
